@@ -5,7 +5,7 @@
     background-color: #ffccff;
 }
 
-#playWindow {
+#playControlArea {
     padding: 5px;
     height: 50px;
     background-color: #ffffff;
@@ -28,7 +28,7 @@
     justify-content: center;
 }
 
-#listSelection {
+#listButtonsArea {
     margin-top: 7px;
     display: flex;
     flex-direction: row;
@@ -37,6 +37,13 @@
     width: 100%;
     height: 30px;
     background-color: #b500fd;
+}
+
+#listButtonsArea > .buttons {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .list {
@@ -48,24 +55,23 @@
     margin: 5px;
 }
 
-#fileList {
+#playListArea {
     margin-top: 10px;
 }
 
-.files {
+#resourceList {
     padding: 0 5px;
-    border: 2px solid yellow;
-    border-radius: 10px;
 }
 
-.file {
+.resource {
     margin-top: 7px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.file > .name {
+.resource > .name {
     flex: 1;
 }
 
